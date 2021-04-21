@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+    {% block content %}
+      <title>Title</title>
+    {% endblock content %}
+  </head>
+  <body>
+  <p>
+    <a href="/">Home</a>
+    <a href="/about">About me</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/portfolio/boogle">Boogle</a>
+    <a href="/portfolio/fakebook">Fakebook</a>
+    <a href="/portfolio/hair-dresser">Hair-dresser</a>
+  </p>
+  {% block content %}
+  <p>
+      <a href="/portfolio/boogle">Boogle</a>
+      <a href="/portfolio/fakebook">Fakebook</a>
+      <a href="/portfolio/hair-dresser">Hair-dresser</a>
+  </p>
+  {% endblock content %}
+  </body>
+</html>
